@@ -1,0 +1,59 @@
+/* Set Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: linear-gradient(135deg, rgb(113, 128, 155) 0%, lightblue 100%, rgb(121, 113, 141)  100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#nav-bar {
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+#nav-bar .logo {
+    font-size: 33px;
+    font-weight: 700;
+    color: rgb(39, 74, 107);
+}
+
+#nav-bar .nav-bar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#nav-bar .nav-bar-links li a {
+    text-decoration: none;
+    color: rgb(39, 74, 107);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 1px;
+}
+
+#nav-bar .nav-bar-links li a:hover {
+    background-color: rgb(39, 74, 107);
+    color: white;
+}
+
+#nav-bar .nav-bar-links li a:hover,
+#nav-bar .nav-bar-links li a:active {
+    background: rgb(39, 74, 107);
+    color: white;
+}
