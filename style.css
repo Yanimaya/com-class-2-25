@@ -1,36 +1,133 @@
-.txt-topic {
-    color: rgb(39, 74, 107);
-    background-color: lightslategray;
-    font-size: 4rem;
-    font-weight: 900;
-}
-
-.txt-detail {
-    color: rgb(107, 103, 39);
-    background-color: rgb(119, 153, 137);
-    font-size: 4rem;
-    font-weight: 900;
-}
-
-.txt-topic:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-#nav-bar {
-   color: blue;
-   background-color: white;
-   padding: 1rem;
-   text-align: center;
-}
-
-p,h1,h2,h3,a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
+
+body {
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.login-container {
+     max-width: 600px;
+     padding: 20px;
+     border-radius: 20px;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     margin: auto;
+}
+
+.login-icon {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-icon i {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+h2.login-topic {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button[type="submit"] {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}    
+
+.divider .divider-line {
+    border-top: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+} 
+
+.divider span {
+    background-color: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+button.btn-social {
+    background-color: rgb(197, 227, 230);
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+button.btn-social i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+.signup-link {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: teal;
+    text-decoration: none;
+    font-weight: 600;
+}
+
