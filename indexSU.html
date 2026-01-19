@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Sign in</title>
+
+    <!-- sdn fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="styleSU.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-icon">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <h2 class="login-topic">Sign up for GitHub</h2>
+      <form method="post" action="#">
+        <button type="button" class="btn-social">
+          <i class="fa-brands fa-google"></i>
+          Continue with Google
+        </button>
+
+        <button type="button" class="btn-social">
+          <i class="fa-brands fa-apple"></i>
+          Continue with Apple
+        </button>
+
+        <div class="divider">
+          <hr class="divider-line" />
+          <span class="divider-text">or</span>
+        </div>
+
+        <label for="email">Email address</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter your password"
+        />
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          placeholder="Enter your username"
+        />
+
+        <button type="submit" class="btn-enter">Create account</button>
+
+        <!-- <button type="submit" class="btn-submit" >
+          Create account
+        </button> -->
+
+        <!-- <div class="divider">
+          <hr class="divider-line" />
+          <span class="divider-text">or</span>
+        </div> -->
+
+        <div class="signup-link">
+          <span>Go back to</span>
+          <a href="index.html">Signing in</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
